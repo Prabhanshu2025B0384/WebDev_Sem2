@@ -1,0 +1,26 @@
+body{
+    background-color: lightgray;
+    
+}
+.box{
+   width: 700px;
+   height: auto;
+   background-color: lightblue;
+   justify-content: center;
+   text-align: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+}
+.myBut{
+     background-color: hsl(116, 86%, 23%);
+     color: white;
+     border-radius: 20px;
+     cursor: pointer;
+     margin-top: 10px;
+     display: inline;
+}
+.myBut:hover{
+        background-color: hsl(116, 86%, 43%);
+}
