@@ -32,11 +32,9 @@
         color: black;
         text-align: center;
        }
-     
     </style>
 </head>
 <body>
-    
     <div class="container">
         <h1>Convert Temperature To Farhenheit </h1>
         <input id="in" placeholder="Type temp in Celsius" type="number">
@@ -44,13 +42,12 @@
         <div id="result">
             Result will show here
         </div>
-    </div>
-    
+    </div>  
     <script>
         function tempConv(){
             let cels=(Number)(document.getElementById("in").value);
             let farhen=(cels*(9/5))+32;
-            document.getElementById("result").innerHTML=cels+" C="+farhen+" Farhenheit";
+            document.getElementById("result").innerHTML=cels+" C="+farhen.toFixed(2)+" Farhenheit";
         }
     </script>
 </body>
