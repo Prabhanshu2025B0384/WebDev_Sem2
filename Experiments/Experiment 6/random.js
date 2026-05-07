@@ -13,22 +13,17 @@ function randomBackgroundColor() {
     document.body.style.backgroundColor = randomColor;
 }
 document.getElementById("colorBtn").addEventListener("click", randomBackgroundColor);
-
 function decreFont(){
-    
     size-=2;
     document.getElementById("output").style.fontSize=size +"px";
 }
 function increFont(){
-
     size+=2;
     document.getElementById("output").style.fontSize=size +"px";
 }
-
 function change(){
     const text = document.getElementById("output");
     const btn = document.getElementById("show");
-
     if(text.style.display === "none"){
         text.style.display = "block";
         btn.textContent = "Hide Paragraph";
@@ -38,7 +33,6 @@ function change(){
         btn.textContent = "Show Paragraph";
     }
 }
-
 function res(){
     size = 16;
     document.body.style.backgroundColor = "";
