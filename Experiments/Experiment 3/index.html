@@ -1,13 +1,227 @@
-<!doctype html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>experiment-3</title>
-  </head>
-  <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
-  </body>
-</html>
+// ==========================================
+// 1. PRINTING OUTPUT
+// ==========================================
+
+console.log("Hello World");
+
+// ==========================================
+// 2. VARIABLES
+// ==========================================
+
+let age = 19;
+age = 20;
+
+const pi = 3.14;
+
+var name = "John";
+
+// ==========================================
+// 3. DATA TYPES
+// ==========================================
+
+let username = "Prabhanshu";
+let score = 95;
+let isStudent = true;
+let x = null;
+let y;
+
+// ==========================================
+// 4. OPERATORS
+// ==========================================
+
+let a = 10;
+let b = 5;
+
+console.log(a + b);
+console.log(a - b);
+console.log(a * b);
+console.log(a / b);
+console.log(a % b);
+
+// ==========================================
+// 5. COMPARISON OPERATORS
+// ==========================================
+
+console.log(a == b);
+console.log(a != b);
+console.log(a > b);
+console.log(a < b);
+console.log(a === b);
+
+// ==========================================
+// 6. IF ELSE
+// ==========================================
+
+if (a > b) {
+  console.log("a is greater");
+} else {
+  console.log("b is greater");
+}
+
+// ==========================================
+// 7. SWITCH
+// ==========================================
+
+let day = 2;
+
+switch(day) {
+  case 1:
+    console.log("Monday");
+    break;
+
+  case 2:
+    console.log("Tuesday");
+    break;
+
+  default:
+    console.log("Invalid");
+}
+
+// ==========================================
+// 8. LOOPS
+// ==========================================
+
+for(let i = 0; i < 5; i++) {
+  console.log(i);
+}
+
+let i = 0;
+
+while(i < 5) {
+  console.log(i);
+  i++;
+}
+
+// ==========================================
+// 9. FUNCTIONS
+// ==========================================
+
+function add(x, y) {
+  return x + y;
+}
+
+console.log(add(5, 10));
+
+const multiply = (x, y) => {
+  return x * y;
+};
+
+console.log(multiply(2, 3));
+
+// ==========================================
+// 10. ARRAYS
+// ==========================================
+
+let fruits = ["Apple", "Banana", "Mango"];
+
+console.log(fruits[0]);
+
+fruits.push("Orange");
+fruits.pop();
+
+console.log(fruits.length);
+
+// ==========================================
+// 11. OBJECTS
+// ==========================================
+
+let person = {
+  name: "John",
+  age: 25,
+  city: "Delhi"
+};
+
+console.log(person.name);
+
+// ==========================================
+// 12. ARRAY METHODS
+// ==========================================
+
+let numbers = [1, 2, 3, 4];
+
+numbers.forEach(num => {
+  console.log(num);
+});
+
+let doubled = numbers.map(num => num * 2);
+
+console.log(doubled);
+
+// ==========================================
+// 13. STRING METHODS
+// ==========================================
+
+let text = "JavaScript";
+
+console.log(text.length);
+console.log(text.toUpperCase());
+console.log(text.toLowerCase());
+
+// ==========================================
+// 14. TEMPLATE LITERALS
+// ==========================================
+
+let user = "Prabhanshu";
+
+console.log(`Hello ${user}`);
+
+// ==========================================
+// 15. TRY CATCH
+// ==========================================
+
+try {
+  console.log(test);
+} catch(error) {
+  console.log("Error occurred");
+}
+
+// ==========================================
+// 16. CLASSES
+// ==========================================
+
+class Student {
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
+  }
+
+  greet() {
+    console.log(`Hello ${this.name}`);
+  }
+}
+
+let s1 = new Student("John", 20);
+
+s1.greet();
+
+// ==========================================
+// 17. PROMISES
+// ==========================================
+
+let promise = new Promise((resolve, reject) => {
+  let success = true;
+
+  if(success) {
+    resolve("Success");
+  } else {
+    reject("Failed");
+  }
+});
+
+promise
+  .then(result => console.log(result))
+  .catch(error => console.log(error));
+
+// ==========================================
+// 18. ASYNC AWAIT
+// ==========================================
+
+async function fetchData() {
+  return "Data received";
+}
+
+fetchData().then(data => console.log(data));
+
+// ==========================================
+// END
+// ==========================================

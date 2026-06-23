@@ -5,9 +5,9 @@ function App() {
  
   return(
     <>
-    <Card name="Prabhanshu" branch="Computer Science" marks={98} />
-    <Card name="Gujjar" branch="Information Technology" marks={-200} />
-    <Card name="Luffy" branch="Berojgar" marks={-900} />
+    <Card name="Rohan" branch="Computer Science" marks={98} />
+    <Card name="Parth" branch="Information Technology" marks={93} />
+    <Card name="Raunak" branch="AI/ML" marks={90} />
     </>
   );
 }
